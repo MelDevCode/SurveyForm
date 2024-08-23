@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Translation Services Form</h1>
+    <p id="description" class="description text-center">Please fill out the form below to provide you with an estimated translation quote.</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name and surname <input id="name" type="text" placeholder=" Enter your name" required></label>
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email <input id="email" type="email" placeholder=" Enter your email" required></label>
+        </div>
+        <div class="form-group"> 
+          <label id="number-label">Number of documents <input id="number" type="number" min="1" max="500" placeholder=" Enter number of documents"></label>
+        </div>
+        <div class="form-group">
+          <label><strong>Which options best describes the service you need?</strong></label>
+          <select id="dropdown">
+            <option>(Select service)</option>
+            <option>Translation</option>
+            <option>Proofreading</option>
+            <option>Subtitling</option>
+            <option>Transcription</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label><strong>What is the deadline?</strong></label>
+          <label><input type="radio" name="user-answer" class="inline-input" value="asap"> I need as soon as possible</label>
+          <label><input type="radio" name="user-answer" class="inline-input" value="soon"> I need it soon but not urgently </label>
+          <label><input type="radio" name="user-answer" class="inline-input" value="can wait"> I can wait</label>
+        </div>
+        <div class="form-group">
+          <label><strong>What would you like to include in your quote?</strong></label>
+          <label>
+            <input type="checkbox" value="1" class="inline-input"> Format
+          </label>
+          <label>
+            <input type="checkbox" value="2" class="inline-input"> Partial deliveries
+          </label>
+          <label>
+        <input type="checkbox" value="3" class="inline-input"> Cultural adaptation
+          </label>
+          <label>
+        <input type="checkbox" value="4" class="inline-input"> Client meetings
+          </label>
+          <label>
+        <input type="checkbox" class="inline-input" value="5"> Word count discount
+          </label>
+        </div>
+        <div class="form-group">
+          <label><strong>Any comments or suggestions?</strong></label> <textarea placeholder=" Enter your comment here"></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit" value="Submit">Submit</button>
+        </div>
+   </form>
+   </body>
+</html>
